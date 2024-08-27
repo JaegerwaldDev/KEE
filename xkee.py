@@ -68,8 +68,6 @@ with open(sys.argv[1], "r") as xkee:
         else:
             i[instruction[0]](False)
 
-# write(0x67, 0x34, 0xf3, 0x00, 0x06, 0x7f)
-
 if sys.argv[1].endswith(".xkee"):
     try:
         sys.argv[2]

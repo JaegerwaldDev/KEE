@@ -1,4 +1,3 @@
-# kee.py file.txt basic_encryption.kee en/de
 import sys, os, numpy
 
 instructions_left = True
@@ -10,7 +9,6 @@ if sys.argv[3] == "de":
 with open(sys.argv[1], "rb") as file:
     file_content = file.read()
     file.close()
-# file = open(sys.argv[1], "wb")
 
 with open(sys.argv[2], "rb") as key:
     key = key.read()

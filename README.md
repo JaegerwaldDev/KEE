@@ -36,7 +36,7 @@ It works by writing whatever you feel like is complicated in XKEE (the more you 
 
 ## From the Releases
 
-1. Download the [latest releases]() of `kee.py` (optionally also `xkee.py`) and put them somewhere you'll remember (e.g. `Documents`).
+1. Download the [latest releases](https://github.com/JaegerwaldDev/KEE/releases/latest) of `kee.py` (optionally also `xkee.py`) and put them somewhere you'll remember (e.g. `Documents`).
 
 2. **Done!**
 

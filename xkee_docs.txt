@@ -1,0 +1,37 @@
+; Comments start like this. Empty lines are ignored.
+; Inline comments aren't supported yet.
+
+; XKEE files should have the extension .xkee!
+
+
+
+Syntax:
+
+<instruction><space><argument>
+e.g.:
+
+add f4
+
+
+
+Instructions:
+
+hx* <argument> - Sets a value that is used by other instructions
+                 to the argument.
+*: hex number from 0-f
+
+add <argument> - Adds a value to every character.
+sub <argument> - Removes a value from every character.
+
+lgd - Adds a value based on a linear gradient from hx0 -> hx1
+grd - Adds a value based on a gradient from hx0 -> hx1 -> hx2 -> hx3
+
+
+
+Arguments:
+
+tsp - Returns a value based on the current timestamp.
+rnd - Returns a random value.
+
+hx* <argument> - Returns the value.
+*: hex number from 0-f

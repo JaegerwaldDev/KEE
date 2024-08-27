@@ -1,0 +1,9 @@
+XKEE Compilation:
+
+xkee.py <file name>.xkee
+xkee.py <file name>.xkee <result file>.kee
+
+KEE Encryption/Decryption:
+
+kee.py <file to encrypt> <key>.kee en
+kee.py <file to decrypt> <key>.kee de

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 32 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="gradient-12-0" gradientUnits="userSpaceOnUse" x1="15.75" y1="0.28" x2="15.75" y2="15" xlink:href="#gradient-12"/>
+    <linearGradient id="gradient-12">
+      <stop offset="0" style="stop-color: rgb(5, 158, 255);"/>
+      <stop offset="1" style="stop-color: rgb(128, 255, 255);"/>
+    </linearGradient>
+  </defs>
+  <path d="M 9 7 L 10.5 7 L 13 10.077 L 15.501 7 L 17 7 L 13.749 10.999 L 17 15 L 15.503 15 L 13 11.921 L 10.497 15 L 9 15 L 12.251 10.999 Z" style="fill: rgb(255, 255, 255); stroke: rgb(13, 17, 23); stroke-width: 2px; stroke-opacity: 0.25;" transform="matrix(1, 0, 0, 1, 1.4210854715202004e-14, 0)">
+    <title>x</title>
+  </path>
+  <path d="M 28.5 15 L 27.5 15 L 27.5 2.6 L 26 5 C 26.321 5 24.5 5 24.5 5 L 27.5 1 L 28 0.28 L 28.5 1 L 31.5 5 L 30 5 L 28.5 2.6 Z M 21.5 1 L 22.5 1 L 22.5 6 L 21.5 6 Z M 20 1 L 20 2 L 6.646 2 C 7.476 2.733 8 3.805 8 5 L 8 11 C 8 13.209 6.21 15 4.001 15 C 1.792 15 0 13.209 0 11 L 0 5 C 0 2.791 1.791 1 4 1 Z M 1 11 C 1 12.657 2.343 14 4.001 14 C 5.43 14 6.627 12.998 6.928 11.658 L 1 5.73 Z M 7 5 C 7 3.343 5.657 2 4 2 C 2.555 2 1.35 3.021 1.064 4.38 L 7 10.316 Z M 25.502 13 L 24 13 L 22.507 10.609 L 22.507 15 L 21.507 15 L 21.507 10.591 L 20 13 L 18.502 13 L 21.502 9 L 22.002 8.28 L 22.502 9 L 22.507 9 L 22.507 9.007 Z" style="fill: url('#gradient-12-0');" transform="matrix(1, 0, 0, 1, 1.4210854715202004e-14, 0)">
+    <title>0^^</title>
+  </path>
+  <path d="M 8.993 6.997 L 10.493 6.997 L 12.993 10.074 L 15.494 6.997 L 16.993 6.997 L 13.742 10.996 L 16.993 14.997 L 15.496 14.997 L 12.993 11.918 L 10.49 14.997 L 8.993 14.997 L 12.244 10.996 L 8.993 6.997 Z" style="fill: rgb(255, 255, 255);" transform="matrix(1, 0, 0, 1, 1.4210854715202004e-14, 0)">
+    <title>x</title>
+  </path>
+</svg>

@@ -4,7 +4,15 @@
 
 1. [About](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#about)
 2. [Installation](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#installation)
-    - yea
+    - [From the Releases](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#from-the-releases)
+3. [Usage](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#usage)
+    - [Encrypting/Decrypting files with a key](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#writing-your-own-keys)
+    - [Writing your own keys](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#writing-your-own-keys)
+        - About XKEE
+        - XKEE Syntax
+        - Compiling `.xkee` to `.kee`
+4. [Contributors and Special Thanks](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#contributors-and-special-thanks)
+5. [License](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#license)
 
 # About
 KEE is a joke turned real project. Originally I wanted to have my own cypher system (simelar to a ceaser cypher) for some of my friends, but then I moved onto cyphering on a binary level, and it became more of an encryption system. After a bit of back and forth messaging, I decided to actually make an encryption system and language.
@@ -27,3 +35,17 @@ It works by writing whatever you feel like is complicated in XKEE (the more you 
 1. Download the [latest releases]() of `kee.py` (optionally also `xkee.py`) and put them somewhere you'll remember (e.g. `Documents`).
 
 2. **Done!**
+
+# Usage
+
+## Encrypting/Decrypting Files with a key
+
+## Writing your own keys
+
+### About XKEE
+### XKEE Syntax
+### Compiling `.xkee` to `.kee`
+
+# Contributors and Special Thanks
+
+# License

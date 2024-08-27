@@ -12,6 +12,7 @@
     - [Writing your own keys](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#writing-your-own-keys)
         - About XKEE
         - XKEE Syntax
+        - XKEE Instructions
         - Compiling `.xkee` to `.kee`
 4. [Contributors and Special Thanks](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#contributors-and-special-thanks)
 5. [License](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#license)
@@ -60,10 +61,18 @@ kee.py my_file.txt my_key.kee en
 > [!NOTE]
 > `en` can be replaced with `de` to decrypt the file back to it's original state.
 
+---
+
 ## Writing your own keys
 
 ### About XKEE
+
+XKEE is the encryption language that keys are written in. It's a slightly enhanced, plain-text version of the HEX "KEE" format. It compiles to `.kee`, which then can be used for encryption.
+
 ### XKEE Syntax
+
+### XKEE Instructions
+
 ### Compiling `.xkee` to `.kee`
 
 # Contributors and Special Thanks

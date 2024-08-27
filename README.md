@@ -16,6 +16,8 @@ It works by writing whatever you feel like is complicated in XKEE (the more you 
 > I'm currently looking for a way to turn this into an executable. This MIGHT require a rewrite in another language, like Rust. That way it also won't require to install Python 3 and the libraries used.
 
 > [!NOTE]
-> If you find it more convenient, make sure to add Python, `kee.py` and `xkee.py` to path. I'm thinking about making an installation script to do this automatically.
+> If you find it more convenient, make sure to add Python, `kee.py` and `xkee.py` to PATH. I'm thinking about making an installation script to do this automatically.
 
-Lorem ipsum.
+1. Download the [latest releases]() of `kee.py` (optionally also `xkee.py`) and put them somewhere you'll remember (e.g. `Documents`).
+
+2. **Done!**

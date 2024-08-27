@@ -54,9 +54,10 @@ My day has been going great!
 > I am not showing an example of the key used here so that nobody encrypts their files with publicly accessable keys.
 
 Now we can encrypt this file with a key called `my_key.kee`! Here's how we'll do it:
-```batch title="copy-me"
-kee.py
+```cmd
+kee.py my_file.txt my_key.kee en
 ```
+`en` can be replaced with `de` to decrypt the file back to it's original state.
 
 ## Writing your own keys
 

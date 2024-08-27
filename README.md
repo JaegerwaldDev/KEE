@@ -51,13 +51,14 @@ Let's say we have an example file, `my_file.txt`, and it contains the following 
 My day has been going great!
 ```
 > [!WARNING]
-> I am not showing an example of the key used here so that nobody encrypts their files with publicly accessable keys.
+> I am not showing an example of the key used here so that nobody encrypts their files with publicly accessable keys. Please use your own, private, keys on this example.
 
-Now we can encrypt this file with a key called `my_key.kee`! Here's how we'll do it:
+We can now encrypt our text file with a key called `my_key.kee`!
 ```cmd
 kee.py my_file.txt my_key.kee en
 ```
-`en` can be replaced with `de` to decrypt the file back to it's original state.
+> [!NOTE]
+> `en` can be replaced with `de` to decrypt the file back to it's original state.
 
 ## Writing your own keys
 

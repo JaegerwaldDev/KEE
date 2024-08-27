@@ -2,11 +2,13 @@
 
 <p align="center"><strong>A way of encryption through the programming of keys.</strong></p>
 
+# Topics
+
 1. [About](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#about)
 2. [Installation](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#installation)
     - [From the Releases](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#from-the-releases)
 3. [Usage](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#usage)
-    - [Encrypting/Decrypting files with a key](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#writing-your-own-keys)
+    - [Encrypting/Decrypting files with a key](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#encryptingdecrypting-files-with-a-key)
     - [Writing your own keys](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#writing-your-own-keys)
         - About XKEE
         - XKEE Syntax
@@ -38,7 +40,23 @@ It works by writing whatever you feel like is complicated in XKEE (the more you 
 
 # Usage
 
+This section will explain every feature of KEE and XKEY, if you want to skip to certain parts, look [here](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#topics)!
+
 ## Encrypting/Decrypting Files with a key
+
+The recommended option is to copy the file to encrypt into the same folder as the KEE scripts, but you can also use other ways to run the scripts, it doesn't really matter. Just make sure you directly run the script like `kee.py` (or `.\kee.py` for PS).
+
+Let's say we have an example file, `my_file.txt`, and it contains the following content:
+```txt
+My day has been going great!
+```
+> [!WARNING]
+> I am not showing an example of the key used here so that nobody encrypts their files with publicly accessable keys.
+
+Now we can encrypt this file with a key called `my_key.kee`! Here's how we'll do it:
+```batch copy
+kee.py
+```
 
 ## Writing your own keys
 

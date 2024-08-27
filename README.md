@@ -5,5 +5,5 @@
 # About
 KEE is a joke turned real project. Originally I wanted to have my own cypher system (simelar to a ceaser cypher) but then I moved onto cyphering on a binary level, and it became more of an encryption system. After a bit of back and forth messaging, I decided to actually make an encryption system and language.
 
-> ![WARNING]
+> [!WARNING]
 > I believe XKEE is the first of it's kind, a language specifically for writing ways to encrypt something. Please let me know if this has been done before, I would be very interested to hear about more of these!

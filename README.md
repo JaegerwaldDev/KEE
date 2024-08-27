@@ -12,10 +12,11 @@
     - [Writing your own keys](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#writing-your-own-keys)
         - About XKEE
         - XKEE Syntax
+        - Base Concepts
         - XKEE Instructions
+        - XKEE Arguments
         - Compiling `.xkee` to `.kee`
-4. [Contributors and Special Thanks](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#contributors-and-special-thanks)
-5. [License](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#license)
+4. [License](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#license)
 
 # About
 KEE is a joke turned real project. Originally I wanted to have my own cypher system (simelar to a ceaser cypher) for some of my friends, but then I moved onto cyphering on a binary level, and it became more of an encryption system. After a bit of back and forth messaging, I decided to actually make an encryption system and language.
@@ -67,14 +68,64 @@ kee.py my_file.txt my_key.kee en
 
 ### About XKEE
 
-XKEE is the encryption language that keys are written in. It's a slightly enhanced, plain-text version of the HEX "KEE" format. It compiles to `.kee`, which then can be used for encryption.
+XKEE is the encryption language that keys are written in. It's a slightly enhanced, plain-text version of the HEX "KEE" format. It compiles to `.kee`, which then can be used for encryption. XKEE looks simelar to assembly, but there are differences that we'll talk about in a bit.
 
 ### XKEE Syntax
 
+The syntax for XKEE is pretty basic, easy to learn and easy to understand, even for beginner programmers.
+
+Every line is formatted like a variation of the following syntax:
+<br><img src="graphics/xkee_instruction_argument.png">
+
+Sometimes, there aren't any arguments required at all<br>
+<img src="graphics/xkee_instruction.png">
+<br>Instructions like this often use seperate variables for modification.
+
+Of course, you're also able to write comments. They aren't really complex, and don't support being inline with another instruction. This serves well enough for most stuff you want to write down, anyway.<br>
+<img src="graphics/xkee_comment.png">
+
+Some instructions make use of 2-4 variables for modification, as mentioned above, the syntax for them is formatted like:
+<br><img src="graphics/xkee_variable.png"><br>
+These are NOT compiled. They exist purely to make the syntax simpler. They are the only instruction that can also be used as an argument at the same time.
+
+### Base Concepts
+
+Whenever a byte exceeds `0xff`, it loops back around to `0x00`
+
 ### XKEE Instructions
+
+- `LGD`: Calculates a linear number gradient between the variables `hx0` and `hx1`, then, every byte gets the number for it's positation added to itself.
+- `GRD`: Calculates a number gradient between the variables `hx0`, `hx1`, `hx2` and `hx3`, then, every byte gets the number for it's positation added to itself.
+- `ADD`: Adds a number to each byte.
+- `SUB`: Subtacts a number from each byte.
+
+### XKEE Arguments
+
+- `TSP`: The current timestamp modulo 256 to fit within a single byte. This may be changed in the future. This instruction exists to make replicating a key from source code more difficult.
+- `RND`: A random number from `0x00` to `0xff`. This instruction exists to make replicating a key from source code more difficult.
 
 ### Compiling `.xkee` to `.kee`
 
-# Contributors and Special Thanks
+Once you're done writing your key, you can compile it with the following command:
+
+```
+xkee.py my_key.xkee
+```
+Optionally, you can define a name for the compiled key:
+```
+xkee.py my_key.xkee cool_key.kee
+```
+
+If you have any issues when compiling, please report them as an issue! I will try to do my best and fix these issues ASAP.
+
+---
 
 # License
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png

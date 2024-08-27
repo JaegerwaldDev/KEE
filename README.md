@@ -44,7 +44,7 @@ This section will explain every feature of KEE and XKEY, if you want to skip to 
 
 ## Encrypting/Decrypting Files with a key
 
-The recommended option is to copy the file to encrypt into the same folder as the KEE scripts, but you can also use other ways to run the scripts, it doesn't really matter. Just make sure you directly run the script like `kee.py` (or `.\kee.py` for PS).
+The recommended option is to copy the file to encrypt into the same folder as the KEE scripts, but you can also use other ways to run the scripts, it doesn't really matter. Make sure you directly run the script like `kee.py` (or `.\kee.py` for PS).
 
 Let's say we have an example file, `my_file.txt`, and it contains the following content:
 ```txt
@@ -54,7 +54,7 @@ My day has been going great!
 > I am not showing an example of the key used here so that nobody encrypts their files with publicly accessable keys.
 
 Now we can encrypt this file with a key called `my_key.kee`! Here's how we'll do it:
-```batch copy
+```batch title="copy-me"
 kee.py
 ```
 

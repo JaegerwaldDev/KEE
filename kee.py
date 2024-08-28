@@ -19,14 +19,14 @@ with open(sys.argv[2], "rb") as key:
 def modify_file(list: bool, value):
     global file_content
     new = []
-    if list and not (decrypt):
-        new = [int(file_content[i]) + value[i] for i in range(0, len(file_content))]
+    if list and not(decrypt):
+        new = [(int(file_content[i]) + value[i]) % 0x100 for i in range(len(file_content))]
     elif list and decrypt:
-        new = [int(file_content[i]) - value[i] for i in range(0, len(file_content))]
-    elif not (list) and not (decrypt):
-        new = [int(file_content[i]) + value for i in range(0, len(file_content))]
-    elif not (list) and decrypt:
-        new = [int(file_content[i]) - value for i in range(0, len(file_content))]
+        new = [(int(file_content[i]) - value[i]) % 0x100 for i in range(len(file_content))]
+    elif not(list) and not(decrypt):
+        new = [(int(file_content[i]) + value) % 0x100 for i in range(len(file_content))]
+    elif not(list) and decrypt:
+        new = [(int(file_content[i]) - value) % 0x100 for i in range(len(file_content))]
     file_content = bytearray(new)
 
 

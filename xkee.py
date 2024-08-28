@@ -11,7 +11,9 @@ result, i = [], {}
 
 
 def write(*argv):
-    result = [bytes((arg,)) for arg in argv]
+    
+    for arg in argv:
+        result.append(bytes((arg,)))
 
 def err(message):
     print(
@@ -94,6 +96,7 @@ with open(sys.argv[1]) as xkee:
             continue
         instruction = instruction.lower().split(" ")
 
+        # tf?
         if len(instruction) > 1 and len(instruction[1]) == 2:
             i[instruction[0]](False, int("0x" + instruction[1], 0))
         elif len(instruction) > 1:

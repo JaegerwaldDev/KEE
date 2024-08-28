@@ -4,19 +4,19 @@
 
 # Topics
 
-1. [About](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#about)
-2. [Installation](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#installation)
-    - [From the Releases](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#from-the-releases)
-3. [Usage](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#usage)
-    - [Encrypting/Decrypting files with a key](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#encryptingdecrypting-files-with-a-key)
-    - [Writing your own keys](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#writing-your-own-keys)
-        - About XKEE
-        - XKEE Syntax
-        - Base Concepts
-        - XKEE Instructions
-        - XKEE Arguments
-        - Compiling `.xkee` to `.kee`
-4. [License](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#license)
+1. [About](#about)
+2. [Installation](#installation)
+    - [From the Releases](#from-the-releases)
+3. [Usage](#usage)
+    - [Encrypting/Decrypting files with a key](#encryptingdecrypting-files-with-a-key)
+    - [Writing your own keys](#writing-your-own-keys)
+        - [About XKEE](#about-xkee)
+        - [XKEE Syntax](#xkee-syntax)
+        - [Base Concepts](#base-concepts)
+        - [XKEE Instructions](#xkee-instructions)
+        - [XKEE Arguments](#xkee-arguments)
+        - [Compiling `.xkee` to `.kee`](#compiling-xkee-to-kee)
+4. [License](#license)
 
 # About
 
@@ -30,7 +30,7 @@ It works by writing whatever you feel is complicated in XKEE (the more you write
 # Installation
 
 > [!NOTE]
-> I'm currently looking for a way to turn this into an executable. This MIGHT require a rewrite in another language, like Rust. That way it also won't require to install Python 3 and the libraries used.
+> I'm currently looking for a way to turn this into an executable. This _might_ require a rewrite in another language, like Rust. That way it also won't require to install Python 3 and the libraries used.
 
 > [!NOTE]
 > If you find it more convenient, make sure to add Python, `kee.py`, and `xkee.py` to PATH. I'm thinking about making an installation script to do this automatically.
@@ -72,7 +72,7 @@ kee.py my_file.txt my_key.kee en
 
 ### About XKEE
 
-XKEE is the encryption language that keys are written in. It's a slightly enhanced, plain-text version of the HEX "KEE" format. It compiles to `.kee`, which then can be used for encryption. XKEE looks simelar to assembly, but there are differences that we'll talk about in a bit.
+XKEE is the encryption language that keys are written in. It's a slightly enhanced, plain-text version of the HEX "KEE" format. It compiles to `.kee`, which then can be used for encryption. XKEE looks similar to assembly, but there are differences that we'll talk about in a bit.
 
 ### XKEE Syntax
 

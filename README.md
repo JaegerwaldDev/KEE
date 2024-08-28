@@ -64,7 +64,8 @@ We can now encrypt our text file with a key called `my_key.kee`!
 kee.py my_file.txt my_key.kee en
 ```
 
-> [!NOTE] > `en` can be replaced with `de` to decrypt the file back to its original state.
+> [!NOTE]
+> `en` can be replaced with `de` to decrypt the file back to its original state.
 
 ---
 

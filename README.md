@@ -6,16 +6,16 @@
 
 1. [About](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#about)
 2. [Installation](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#installation)
-       - [From the Releases](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#from-the-releases)
+    - [From the Releases](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#from-the-releases)
 3. [Usage](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#usage)
-       - [Encrypting/Decrypting files with a key](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#encryptingdecrypting-files-with-a-key)
-       - [Writing your own keys](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#writing-your-own-keys)
-           - About XKEE
-           - XKEE Syntax
-           - Base Concepts
-           - XKEE Instructions
-           - XKEE Arguments
-           - Compiling `.xkee` to `.kee`
+    - [Encrypting/Decrypting files with a key](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#encryptingdecrypting-files-with-a-key)
+    - [Writing your own keys](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#writing-your-own-keys)
+        - About XKEE
+        - XKEE Syntax
+        - Base Concepts
+        - XKEE Instructions
+        - XKEE Arguments
+        - Compiling `.xkee` to `.kee`
 4. [License](https://github.com/JaegerwaldDev/KEE/tree/main?tab=readme-ov-file#license)
 
 # About

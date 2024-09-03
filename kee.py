@@ -100,7 +100,7 @@ while instructions_left:
     instructions[key_instructions[0]]()
     for instruction in range(0,length[key_instructions[0]]):
         key_instructions.pop(0)
-    if not(len(key_instructions) > 0):
+    if not len(key_instructions) > 0:
         instructions_left = False
 
 with open(sys.argv[1], "wb") as file:

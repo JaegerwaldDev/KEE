@@ -8,7 +8,6 @@ if sys.argv[3] == "de":
 
 with open(sys.argv[1], "rb") as file:
     file_content = file.read()
-    file.close()
 
 with open(sys.argv[2], "rb") as key:
     key = key.read()
@@ -106,6 +105,5 @@ while instructions_left:
 
 with open(sys.argv[1], "wb") as file:
     file.write(file_content)
-    file.close()
 
 file.close()

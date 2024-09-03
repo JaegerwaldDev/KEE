@@ -92,7 +92,6 @@ create_i_hx()
 def read_xkee():
     with open(sys.argv[1]) as xkee:
         xkee_code = xkee.read()
-    xkee.close()
     line = 0
 
     for instruction in xkee_code.split("\n"):

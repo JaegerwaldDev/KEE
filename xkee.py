@@ -14,7 +14,7 @@ def is_hex(s):
             return False
         int(s, 16)
         return True
-    except:
+    except ValueError:
         return False
 
 

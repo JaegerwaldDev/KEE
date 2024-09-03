@@ -25,7 +25,7 @@ def write(*argv):
 
 def err(message, line=0, character=0):
     print(f"{error_color}Compilation Error: {message}{dark_gray_color} @ pos {line}:{character}{colorama.Style.RESET_ALL}")
-    quit()
+    quit(1)
 
 
 

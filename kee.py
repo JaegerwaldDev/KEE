@@ -3,8 +3,11 @@ import sys, os, numpy
 instructions_left = True
 decrypt = False
 
-if sys.argv[3] == "de":
-    decrypt = True
+try:
+    if sys.argv[3] == "de":
+        decrypt = True
+except:
+    decrypt = False
 
 with open(sys.argv[1], "rb") as file:
     file_content = file.read()

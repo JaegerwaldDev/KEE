@@ -17,8 +17,6 @@ def is_hex(s):
     except ValueError:
         return False
 
-
-
 def write(*argv):
     for arg in argv:
         result.append(bytes((arg,)))
@@ -89,6 +87,15 @@ def i_hx{hex(j)[2:]}(request: bool, value=0x0, line=0) -> hex:
         i[f"hx{hex(j)[2:]}"] = locals()[f"i_hx{hex(j)[2:]}"]
 create_i_hx()
 
+def compile_instruction(instruction, line):
+    length = len(instruction)
+    if instruction[0] in i and length > 1 and is_hex(instruction[1]):
+        i[instruction[0]](False, int("0x" + instruction[1], 0), line)
+    elif length > 1:
+        i[instruction[0]](False, i[instruction[1]](True, line=line), line)
+    else:
+        i[instruction[0]](False, None, line)
+
 def read_xkee():
     with open(sys.argv[1]) as xkee:
         xkee_code = xkee.read()
@@ -101,14 +108,7 @@ def read_xkee():
             continue
 
         instruction = instruction.lower().split(";")[0].split(" ")
-        length = len(instruction)
-
-        if length > 1 and is_hex(instruction[1]):
-            i[instruction[0]](False, int("0x" + instruction[1], 0), line)
-        elif length > 1:
-            i[instruction[0]](False, i[instruction[1]](True, line=line), line)
-        else:
-            i[instruction[0]](False, None, line)
+        compile_instruction()
 
 if sys.argv[1].endswith(".xkee"):
     read_xkee()

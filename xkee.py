@@ -63,13 +63,31 @@ def i_sub(request: bool, value=0x0, line=0):
         err("SUB used as argument!", line, 5)
     write(0xe4, 0xff-value)
 
+def i_wav(request: bool, value=None, line=0):
+    if request:
+        err("WAV used as argument", line, 5)
+    elif value != None:
+        err("Gave argument to GRD, when none are required.", line, 5)
+
+    write(0xdd, i["hx0"](True), i["hx1"](True))
+
+def i_pwv(request: bool, value=None, line=0):
+    if request:
+        err("WAV used as argument", line, 5)
+    elif value != None:
+        err("Gave argument to GRD, when none are required.", line, 5)
+
+    write(0x7c, i["hx0"](True), i["hx1"](True), i["hx2"](True))
+
 i = {
     "tsp": i_tsp,
     "rnd": i_rnd,
     "lgd": i_lgd,
     "grd": i_grd,
     "add": i_add,
-    "sub": i_sub
+    "sub": i_sub#,
+#    "wav": i_wav,
+#    "pwv": i_pwv
 }
 
 values = []
@@ -108,7 +126,7 @@ def read_xkee():
             continue
 
         instruction = instruction.lower().split(";")[0].split(" ")
-        compile_instruction()
+        compile_instruction(instruction, line)
 
 if sys.argv[1].endswith(".xkee"):
     read_xkee()

@@ -108,7 +108,7 @@ def read_xkee():
             continue
 
         instruction = instruction.lower().split(";")[0].split(" ")
-        compile_instruction()
+        compile_instruction(instruction, line)
 
 if sys.argv[1].endswith(".xkee"):
     read_xkee()

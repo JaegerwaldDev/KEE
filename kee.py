@@ -2,21 +2,21 @@ import sys, os, numpy
 
 instructions_left = True
 decrypt = False
-key_instructions = []
-file_content = None
 
-def open_file(file_path):
-    global file_content
-    with open(file_path, "rb") as file:
-        file_content = file.read()
+try:
+    if sys.argv[3] == "de":
+        decrypt = True
+except:
+    decrypt = False
 
-def open_key(key_path):
-    global key_instructions
-    with open(key_path, "rb") as key:
-        key = key.read()
-        key_instructions = []
-        for instruction in key:
-            key_instructions.append(instruction)
+with open(sys.argv[1], "rb") as file:
+    file_content = file.read()
+
+with open(sys.argv[2], "rb") as key:
+    key = key.read()
+    key_instructions = []
+    for instruction in key:
+        key_instructions.append(instruction)
 
 def modify_file(list: bool, value):
     global file_content
@@ -88,68 +88,25 @@ def gradient():
 def add():
     modify_file(False, key_instructions[1])
 
-def wave():
-    # logic here
-    pass
-def repeated_wave():
-    # more advanced logic here, in patterns, repeated infinitely
-    pass
-
 length = {
     0x23: 3,
     0x3f: 5,
-    0xe4: 2#,
-#    0xdd: 3,
-#    0x7c: 4
+    0xe4: 2
 }
 instructions = {
     0x23: linear_gradient,
     0x3f: gradient,
-    0xe4: add#,
-#    0xdd: wave,
-#    0x7c: repeated_wave
+    0xe4: add
 }
 
-def default_encrypt_file():
-    instructions_left = True
+while instructions_left:
+    instructions[key_instructions[0]]()
+    for instruction in range(0,length[key_instructions[0]]):
+        key_instructions.pop(0)
+    if not len(key_instructions) > 0:
+        instructions_left = False
 
-    while instructions_left:
-        instructions[key_instructions[0]]()
-        for instruction in range(0,length[key_instructions[0]]):
-            key_instructions.pop(0)
-        if not len(key_instructions) > 0:
-            instructions_left = False
+with open(sys.argv[1], "wb") as file:
+    file.write(file_content)
 
-    with open(sys.argv[1], "wb") as file:
-        file.write(file_content)
-
-    file.close()
-
-def encrypt_file(file_path: str, key_path: str, decryptMode: bool):
-    global decrypt
-    decrypt = decryptMode
-
-    instructions_left = True
-    open_file(file_path)
-    open_key(key_path)
-
-    while instructions_left:
-        instructions[key_instructions[0]]()
-        for instruction in range(0,length[key_instructions[0]]):
-            key_instructions.pop(0)
-        if not len(key_instructions) > 0:
-            instructions_left = False
-
-    with open(file_path, "wb") as file:
-        file.write(file_content)
-
-    file.close()
-
-try:
-    if sys.argv[3] == "de":
-        decrypt = True
-    open_file(sys.argv[1])
-    open_key(sys.argv[2])
-    default_encrypt_file()
-except:
-    print("mode..? (en/de)")
+file.close()

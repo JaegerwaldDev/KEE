@@ -16,6 +16,7 @@
         - [XKEE Instructions](#xkee-instructions)
         - [XKEE Arguments](#xkee-arguments)
         - [Compiling `.xkee` to `.kee`](#compiling-xkee-to-kee)
+    - [Library](#library)
 4. [License](#license)
 
 # About
@@ -126,6 +127,10 @@ xkee.py my_key.xkee cool_key.kee
 If you have any issues when compiling, please report them as an issue! I will try to do my best and fix these issues ASAP.
 
 ---
+
+## Library
+
+[TheZoidMaster](https://github.com/TheZoidMaster) made a fork of KEE for usage as a Python library! Please use that project for embedding KEE in your personal projects! You can check it out [here](https://github.com/TheZoidMaster/keelib)!
 
 # License
 
